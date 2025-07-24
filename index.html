@@ -37,20 +37,37 @@
     </ul>
   </section>
 
-  <section id="services">
-    <h2>🛠️ সার্ভিস সমূহ</h2>
-    <p>Web Design, Assignment Help, Project Development, App Make, Graphic Design, ICT & Science ক্লাশ, PDF File প্রিপারেশন এবং আরও অনেক কিছু!</p>
-    <form action="https://formsubmit.co/tarikulptk2002@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="নাম" required />
-      <input type="email" name="email" placeholder="ইমেইল" required />
-      <input type="text" name="service" placeholder="সার্ভিস টাইপ" required />
-      <input type="text" name="district" placeholder="জেলার নাম" required />
-      <input type="text" name="class" placeholder="ক্লাস নাম (যদি থাকে)" />
-      <textarea name="message" placeholder="তোমার বার্তা/আবেদন..." required></textarea>
-      <button type="submit">📩 আবেদন করো</button>
-    </form>
-  </section>
+<section id="service-form">
+  <h2>সেবা পেতে আবেদন করুন</h2>
+  <form action="https://formspree.io/f/xpzvndpj" method="POST">
+    <label>নাম:</label>
+    <input type="text" name="name" required>
+    
+    <label>ইমেইল:</label>
+    <input type="email" name="email" required>
+    
+    <label>সেবার ধরন:</label>
+    <select name="service_type" required>
+      <option>Web Design</option>
+      <option>Assignment Help</option>
+      <option>App Making</option>
+      <option>Graphics Design</option>
+      <option>Online Coaching</option>
+      <option>Others</option>
+    </select>
 
+    <label>জেলা:</label>
+    <input type="text" name="district">
+
+    <label>ক্লাস / বিভাগ:</label>
+    <input type="text" name="class_or_dept">
+
+    <label>বার্তা:</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <button type="submit">আবেদন পাঠান</button>
+  </form>
+</section>
   <section id="contact">
     <h2>📞 যোগাযোগ</h2>
     <p>Email: tarikulptk2002@gmail.com</p>
